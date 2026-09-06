@@ -12,4 +12,7 @@ user.getName();
 
 // JSON is not that powerful
 
-('[{"firstname":"wally"}, {"secondname":"warthog"}]');
+let jsonData = '[{"firstname":"wally"}, {"secondname":"warthog"}]';
+
+let JSObject = JSON.parse(jsonData);
+console.log(JSObject);
