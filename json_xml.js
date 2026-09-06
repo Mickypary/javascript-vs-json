@@ -1,21 +1,43 @@
 // JSON VS XML
 
+// JSON v1
 let animal = `{ 
     "animals" : [
-      {"type": "Dog","sound": "woof"},
-      {"type": "Cat","sound": "meow"}
+      {"habitatType":"pets","categoryType":"mammal","type": "Dog","sound": "woof"},
+      {"habitatType","pets","categoryType":"reptile","type": "Snake","sound": "sssss"}
 ]
 }`;
 
+// JSON v2
+
+`{"animals": [
+  {
+    "type": {
+      "habitat": "pets",
+      "category": "mammal"
+    },
+    "breed": "dog",
+    "sound": "woof"
+  },
+  {
+    "type": {
+      "habitat": "pets",
+      "category": "reptile"
+    },
+    "breed": "snake",
+    "sound": "sssss"
+  }
+]}`;
+
 // XML
 
-<animals>
-  <animal>
+<animals type="pets">
+  <animal type="mammal">
     <type>Dog</type>
     <sound>Woof</sound>
   </animal>
-  <animal>
-    <type>Cat</type>
-    <sound>Meow</sound>
+  <animal type="reptile">
+    <type>Snake</type>
+    <sound>SSSSS</sound>
   </animal>
 </animals>;
