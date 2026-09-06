@@ -1,10 +1,11 @@
 // JSON VS XML
 
-`{ 
+let animal = `{ 
     "animals" : [
       {"type": "Dog","sound": "woof"},
       {"type": "Cat","sound": "meow"}
-]}`;
+]
+}`;
 
 // XML
 
